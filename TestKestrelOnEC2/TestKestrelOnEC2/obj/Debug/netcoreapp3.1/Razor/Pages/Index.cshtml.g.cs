@@ -28,7 +28,7 @@ using TestKestrelOnEC2;
         {
 #nullable restore
 #line 3 "D:\My_test_repo\TestKestrelOnEC2\TestKestrelOnEC2\Pages\Index.cshtml"
-  
+
     ViewData["Title"] = "Home page";
 
 #line default
