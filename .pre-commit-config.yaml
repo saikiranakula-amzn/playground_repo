@@ -1,8 +1,6 @@
 repos:
--   repo: https://github.com/saikiranakula-amzn/playground_repo
-    rev: main
+-   repo: https://github.com/awslabs/git-secrets
+    rev: master
     hooks:
-    -   id: custom-git-secrets
-        entry: hooks/pre-commit.sh
-        types: [python]
+    -   id: git-secrets
         language: script 
