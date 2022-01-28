@@ -27,5 +27,6 @@ jobs:
           echo "Added secrets"
           echo ${env.working-directory}
           dir
-          git secrets --scan -r ../playground_repo
+          git secrets --scan -r ../
+          dir
           echo "scan completed"
