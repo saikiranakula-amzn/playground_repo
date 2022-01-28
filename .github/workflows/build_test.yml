@@ -21,7 +21,5 @@ jobs:
           git clone https://github.com/awslabs/git-secrets.git target
           cd target
           ./install.ps1
-    - name: Scan the repo
-      run: |
-           git secrets --register-aws --global
-           git secrets --scan -r 
+          git secrets --register-aws --global
+          git secrets --scan -r
