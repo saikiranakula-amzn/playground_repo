@@ -1,3 +1,4 @@
 password=ex@mplepassword
 password=******
 AWS_SECRET_ACCESS_KEY= = test
+AWS_SECRET_ACCESS_KEY = test
