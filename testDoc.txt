@@ -1,3 +1,2 @@
-aws_access_key = dfsdffsdsdsdsdsfsdsd
-aws_access_key = dfsdffsdsdsdsdsfsdsd
-
+password=ex@mplepassword
+password=******
