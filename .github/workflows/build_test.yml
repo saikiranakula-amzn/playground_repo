@@ -20,3 +20,17 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.301
+    - name: Checkout tools repo
+      uses: actions/checkout@v2
+      with:
+        repository: https://github.com/awslabs/git-secrets
+        path: git-
+    - name: Intall git secrets
+      run: |
+          cd /git-secrets
+          git clone https://github.com/my_account/my_repo
+          powershell -file install.ps1
+          git secrets --register-aws --global
+    - name: Scan the repo
+      run: |
+           git secrets --scan -r 
