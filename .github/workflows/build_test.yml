@@ -19,11 +19,10 @@ jobs:
     - name: Check for secrets leak
       run: |
           git clone https://github.com/awslabs/git-secrets.git target
-          echo "clone completed"
           cd target
           ./install.ps1
-          echo "Installation completed"
+          echo "Git-secrets installation completed"
           git secrets --register-aws --global
-          echo "Added secrets"
+          echo "Added aws secrets templates"
           git secrets --scan -r ../
-          echo "scan completed"
+          echo "Repository scan completed"
