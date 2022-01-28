@@ -1,9 +1,2 @@
-aws_access_key_id=dfsdffsdsdsdsdsfsdsd
-aws_access_key_id=dfsdffsdsdsdsdsfsdsd
-aws_access_key_id=dfsdffsdsdsdsdsfsdsd
-aws_access_key_id=dfsdffsdsdsdsdsfsdsd
-aws_access_key_id=dfsdffsdsdsdsdsfsdsd
-aws_access_key_id=dfsdffsdsdsdsdsfsdsd
-aws_access_key_id=dfsdffsdsdsdsdsfsdsd
-aws_access_key_id=dfsdffsdsdsdsdsfsdsd
+aws_access_key = dfsdffsdsdsdsdsfsdsd
 
