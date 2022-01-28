@@ -25,5 +25,6 @@ jobs:
           echo "Installation completed"
           git secrets --register-aws --global
           echo "Added secrets"
-          git secrets --scan -r
+          echo ${GITHUB_WORKSPACE}
+          git secrets --scan -r ${GITHUB_WORKSPACE}
           echo "scan completed"
