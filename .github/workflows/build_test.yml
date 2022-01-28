@@ -26,5 +26,5 @@ jobs:
           git secrets --register-aws --global
           echo "Added secrets"
           echo ${env.working-directory}
-          git secrets --scan -r ${env.working-directory}
+          git secrets --scan -r ./playground_repo
           echo "scan completed"
