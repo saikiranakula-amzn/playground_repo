@@ -18,13 +18,7 @@ jobs:
         fetch-depth: 0
     - name: Checkout tools repo
       run: |
-          git https://github.com/awslabs/git-secrets.git git-secrets
-          cd git-secrets
-          powershell -file install.ps1
-          git secrets --register-aws --global
-    - name: Intall git secrets
-      run: |
-          git clone awslabs/git-secrets
+          git clone https://github.com/awslabs/git-secrets.git git-secrets
           cd git-secrets
           powershell -file install.ps1
           git secrets --register-aws --global
