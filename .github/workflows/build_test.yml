@@ -21,10 +21,8 @@ jobs:
       with:
         repository: awslabs/git-secrets
         path: git-secrets
-    - name: Intall git secrets
-      run: |
-          cd /git-secrets
-          git clone https://github.com/my_account/my_repo
+        run: |
+          cd git-secrets
           powershell -file install.ps1
           git secrets --register-aws --global
     - name: Scan the repo
