@@ -1,6 +1,6 @@
 repos:
--   repo: https://github.com/awslabs/git-secrets
-    rev: master
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
     hooks:
-    -   id: git-secrets
-        language: script 
+    -   id: detect-aws-credentials
+    -   id: detect-private-key
