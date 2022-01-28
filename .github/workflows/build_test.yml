@@ -19,7 +19,11 @@ jobs:
     - name: Checkout tools repo
       run: |
           git clone https://github.com/awslabs/git-secrets.git target
+          echo "clone completed"
           cd target
           ./install.ps1
+          echo "Installation completed"
           git secrets --register-aws --global
+          echo "Added secrets"
           git secrets --scan -r
+          echo "scan completed"
